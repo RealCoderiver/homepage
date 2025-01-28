@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coderiver LLC - Your trusted software development partner.">
+    <title>Coderiver LLC</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E0F7FA;
+            color: #003366;
+            text-align: center;
+        }
+        header {
+            background-color: #005B96;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #0077C0;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0096D6;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+        }
+        footer {
+            background-color: #005B96;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Coderiver LLC</h1>
+        <p>Your Trusted Software Development Partner</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <img src="biglogo.gif" alt="CodeRiver Logo">
+        <h2>Our Services</h2>
+        <p>Providing top-tier software solutions tailored to your needs.</p>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Coderiver LLC. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
